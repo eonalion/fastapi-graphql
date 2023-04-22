@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-
 from app.home.views import router as home_router
 
 app = FastAPI(
@@ -13,4 +12,3 @@ app = FastAPI(
 
 
 app.include_router(home_router, prefix="/home", tags=["home"])
-
